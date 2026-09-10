@@ -33,7 +33,7 @@ export const RESTAURANT_DATA = {
   phoneHref: "tel:+905539188557",
   instagramUrl: "https://www.instagram.com/babacancigkofte_kucukpark/",
   instagramUsername: "@babacancigkofte_kucukpark",
-  mapsQueryUrl: "https://www.google.com/maps/search/?api=1&query=Babacan+%C3%87i%C4%9Fk%C3%B6fte+K%C3%BC%C3%A7%C3%BCkpark+Bornova+%C4%B0zmir",
+  mapsUrl: "https://www.google.com/maps/place/Kaz%C4%B1mdirik,+175.+Sk.+15+A,+35100+Bornova%2F%C4%B0zmir/data=!4m2!3m1!1s0x14b97d2582a6dcd9:0xad36872ad9d28718",
   slogan: "Dünya'nın İlk Çiğköfte Restoranı",
   subSlogan: "Dünya'nın Restoran Menülü İlk Çiğköftecisi",
   patentNote: "Özel kova ve tabak sunumları Babacan patentli konsepttir.",
@@ -97,6 +97,7 @@ export const RESTAURANT_DATA = {
       badge: "Çok Sevilen",
       description: "Tüm özel sosların zengin harmanı, nar ekşisi, taze yeşillikler ve dilimlenmiş özel roll çiğköfteler.",
       portions: "Normal (150 gr) & XL (225 gr)",
+      image: "/images/babacan-menu-fiyat-panosu.jpg",
       highlight: false,
     },
     {
@@ -106,6 +107,7 @@ export const RESTAURANT_DATA = {
       badge: "Taptaze",
       description: "Bol taze nane, göbek marul, kırmızı lahana ve hafif Akdeniz esintili özel sos ile ferah kova çiğköfte deneyimi.",
       portions: "Normal (150 gr) & XL (225 gr)",
+      image: "/images/babacan-taze-tezgah.jpg",
       highlight: false,
     },
     {
@@ -125,6 +127,7 @@ export const RESTAURANT_DATA = {
       badge: "Sıcak Sunum",
       description: "Fırınlanmış sıcak kaşar peyniri kaplamasıyla alışılmışın ötesinde gurme bir kova çiğköfte yorumu.",
       portions: "Normal & XL Seçeneği",
+      image: "/images/babacan-isikli-menu-panosu.jpg",
       highlight: false,
     },
     {
@@ -134,6 +137,7 @@ export const RESTAURANT_DATA = {
       badge: "Sıcak Sunum",
       description: "Eritilmiş cheddar sosu ile zenginleştirilmiş, çiğköftenin acısıyla peynirin uyumunu yakalayan özel sunum.",
       portions: "Normal & XL Seçeneği",
+      image: "/images/babacan-restoran-kasa-genel.jpg",
       highlight: false,
     },
     {
@@ -143,6 +147,7 @@ export const RESTAURANT_DATA = {
       badge: "Fırın Spesiyali",
       description: "Toprak kiremitte, fırından yeni çıkmış sıcak peynirli ve özel baharatlı restoran konsepti sunumu.",
       portions: "Tek Kişilik Restoran Tabağı",
+      image: "/images/babacan-menu-fiyat-panosu.jpg",
       highlight: false,
     },
     {
@@ -152,6 +157,7 @@ export const RESTAURANT_DATA = {
       badge: "Geleneksel Ziyafet",
       description: "Özenle sıkılmış çiğköfteler, zengin yeşillik buketi, domates dilimleri, turşular ve nar ekşisiyle klasik şölen.",
       portions: "Doyurucu Porsiyon",
+      image: "/images/babacan-taze-tezgah.jpg",
       highlight: false,
     },
     {
@@ -161,6 +167,7 @@ export const RESTAURANT_DATA = {
       badge: "Günlük Taze El Yoğurması",
       description: "Ev ve toplantı ziyafetleriniz için taze yeşillikleri, lavaşı ve özel soslarıyla birlikte paketlenen günlük el yoğurması çiğköfte.",
       portions: "250 gr · 500 gr · 750 gr · 1000 gr · 1500 gr (Aile Boyu)",
+      image: "/images/babacan-isikli-menu-panosu.jpg",
       highlight: false,
     },
     {
@@ -170,6 +177,7 @@ export const RESTAURANT_DATA = {
       badge: "Gurme Seçim",
       description: "Özel zeytinyağı, çekilmiş Antep fıstığı ve iri ceviz taneleriyle harmanlanan gurme çiğköfte yoğurması.",
       portions: "Özel Yoğurma Paketi",
+      image: "/images/babacan-restoran-kasa-genel.jpg",
       highlight: false,
     },
   ],
@@ -218,6 +226,24 @@ export const RESTAURANT_DATA = {
       alt: "Babacan Çiğköfte King Roll ve Akdeniz Kova afişleri",
       tag: "Konsept",
       span: "col-span-1 md:col-span-2 md:row-span-1",
+    },
+    {
+      id: "gal-6",
+      title: "Menü & Fiyat Panosu",
+      subtitle: "Tüm ürün ve fiyatların yer aldığı güncel menü panosu",
+      src: "/images/babacan-menu-fiyat-panosu.jpg",
+      alt: "Babacan Çiğköfte Küçükpark menü ve fiyat panosu yakın çekim",
+      tag: "Menü",
+      span: "col-span-1 md:col-span-1 md:row-span-1",
+    },
+    {
+      id: "gal-7",
+      title: "Işıklı Menü Tabelası",
+      subtitle: "Tezgâh üstü aydınlatmalı geniş menü panosu",
+      src: "/images/babacan-isikli-menu-panosu.jpg",
+      alt: "Babacan Çiğköfte Küçükpark ışıklı menü panosu genel görünüm",
+      tag: "Mekân",
+      span: "col-span-1 md:col-span-1 md:row-span-1",
     },
   ],
 } as const;

@@ -34,7 +34,7 @@ export default function ContactSection() {
             </div>
 
             <a
-              href={RESTAURANT_DATA.mapsQueryUrl}
+              href={RESTAURANT_DATA.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-2xl bg-brand-beige hover:bg-brand-border text-brand-dark font-semibold text-sm transition-colors min-h-[44px]"

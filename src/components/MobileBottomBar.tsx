@@ -19,7 +19,7 @@ export default function MobileBottomBar() {
 
         {/* Maps Button */}
         <a
-          href={RESTAURANT_DATA.mapsQueryUrl}
+          href={RESTAURANT_DATA.mapsUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-brand-beige active:bg-brand-border text-brand-dark font-semibold text-sm border border-brand-border transition-all min-h-[48px]"

@@ -9,7 +9,7 @@ export default function InfoStrip() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 divide-y md:divide-y-0 md:divide-x divide-brand-border">
             {/* Item 1: Location */}
             <a
-              href={RESTAURANT_DATA.mapsQueryUrl}
+              href={RESTAURANT_DATA.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 pt-4 first:pt-0 md:pt-0 md:px-6 first:px-0 group focus-visible:outline-2 focus-visible:outline-brand-red rounded-xl"
