@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-bg: #FBF8F2;
+    --brand-card: #FFFFFF;
+    --brand-beige: #F1E9DD;
+    --brand-red: #A92B25;
+    --brand-olive: #66734A;
+    --brand-dark: #29231F;
+    --brand-muted: #665E58;
+    --brand-border: #E7DFD4;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #FBF8F2;
+    color: #29231F;
+  }
+
+  body {
+    background-color: #FBF8F2;
+    color: #29231F;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    background-color: #A92B25;
+    color: #FFFFFF;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Safe area padding for mobile bottom bar */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
