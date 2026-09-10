@@ -76,8 +76,8 @@ export default function Hero() {
               <div className="relative rounded-3xl overflow-hidden bg-white p-2.5 sm:p-3 shadow-card border border-brand-border/80 group">
                 <div className="relative aspect-square w-full rounded-2xl overflow-hidden bg-brand-beige">
                   <Image
-                    src="/images/babacan-kanka-menu.jpg"
-                    alt="Babacan Çiğköfte Kanka Menü iki adet dürüm, köpüklü ayran ve taze garnitürler"
+                    src="/images/babacan-akdeniz-kova.jpg"
+                    alt="Babacan Çiğköfte Akdeniz Kova patentli sunumu"
                     fill
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 540px"
@@ -89,7 +89,7 @@ export default function Hero() {
                   {/* Caption on image */}
                   <div className="absolute bottom-3 left-3 right-3 text-white">
                     <span className="inline-block px-2.5 py-1 rounded-md bg-brand-dark/70 backdrop-blur-sm text-[11px] font-medium tracking-wide uppercase">
-                      Gerçek Ürün · Kanka Menü
+                      Patentli Konsept · Akdeniz Kova
                     </span>
                   </div>
                 </div>

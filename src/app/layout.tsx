@@ -48,10 +48,10 @@ export const metadata: Metadata = {
     siteName: "Babacan Çiğköfte Küçükpark",
     images: [
       {
-        url: "/images/babacan-kanka-menu.jpg",
-        width: 1024,
-        height: 1024,
-        alt: "Babacan Çiğköfte Küçükpark Kanka Menü Dürüm & Ayran",
+        url: "/images/babacan-citir-kova.jpg",
+        width: 1080,
+        height: 1080,
+        alt: "Babacan Çiğköfte Küçükpark Çıtır Kova Sunumu",
       },
     ],
   },
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "Babacan Çiğköfte Küçükpark | Bornova, İzmir",
     description:
       "Babacan Çiğköfte Küçükpark’ı keşfedin. Bornova, İzmir’de çiğköfte keyfi. Çalışma saatleri 10:30–00:30. Sipariş: 0553 918 85 57.",
-    images: ["/images/babacan-kanka-menu.jpg"],
+    images: ["/images/babacan-citir-kova.jpg"],
   },
   robots: {
     index: true,
@@ -79,7 +79,7 @@ export default function RootLayout({
     name: RESTAURANT_DATA.name,
     description:
       "Babacan Çiğköfte Küçükpark’ı keşfedin. Bornova, İzmir’de çiğköfte keyfi. Çalışma saatleri 10:30–00:30.",
-    image: "/images/babacan-kanka-menu.jpg",
+    image: "/images/babacan-citir-kova.jpg",
     telephone: "+905539188557",
     servesCuisine: "Turkish, Çiğköfte",
     priceRange: "₺₺",
@@ -87,7 +87,8 @@ export default function RootLayout({
       "@type": "PostalAddress",
       addressLocality: "Bornova",
       addressRegion: "İzmir",
-      streetAddress: "Küçükpark",
+      streetAddress: "Kazımdirik, 175. Sk. 15 A",
+      postalCode: "35100",
       addressCountry: "TR",
     },
     openingHoursSpecification: [
