@@ -18,7 +18,7 @@ Client project — designed and developed by Berke Coşkuner for Babacan Çiğk�
 
 ## Overview
 
-A one-page restaurant website that helps visitors see the menu, find the branch and order by phone with one tap. All content uses the branch's own product and in-store photos, and every business detail (menu, opening hours, phone, Instagram, map link) comes from one data file.
+A one-page restaurant website that helps visitors see the menu, find the branch and order by phone with one tap. The images are the brand's product visuals and photos taken at the branch, and every business detail (menu, opening hours, phone, Instagram, map link) comes from one data file.
 
 ## Features
 
@@ -50,7 +50,7 @@ Typography: *Playfair Display* for headings (with Turkish character support), *P
 | --- | --- |
 | Framework | Next.js 14 (App Router), React 18 |
 | Language | TypeScript |
-| Styling | Tailwind CSS 3, clsx, tailwind-merge |
+| Styling | Tailwind CSS 3 |
 | Icons | lucide-react |
 | Hosting | Vercel |
 
@@ -58,7 +58,7 @@ Typography: *Playfair Display* for headings (with Turkish character support), *P
 
 ```
 babacan/
-├── public/images/          # branch product and in-store photos
+├── public/images/          # product visuals and branch photos
 ├── src/
 │   ├── app/                # layout (metadata + JSON-LD), page, sitemap, robots, manifest, icon
 │   ├── components/         # Header, Hero, InfoStrip, FlavorsSection, AboutSection,
@@ -106,7 +106,7 @@ Müşteri projesi — Berke Coşkuner tarafından Babacan Çiğköfte Küçükpa
 
 ### Genel bakış
 
-Ziyaretçilerin menüyü görmesini, şubeyi bulmasını ve tek dokunuşla telefonla sipariş vermesini sağlayan tek sayfalık restoran sitesi. Sitede şubeye ait ürün ve mekân fotoğrafları kullanılır; menü, çalışma saatleri, telefon, Instagram ve harita bağlantısı gibi tüm bilgiler tek bir veri dosyasından gelir.
+Ziyaretçilerin menüyü görmesini, şubeyi bulmasını ve tek dokunuşla telefonla sipariş vermesini sağlayan tek sayfalık restoran sitesi. Sitede markanın ürün görselleri ve şubede çekilmiş fotoğraflar kullanılır; menü, çalışma saatleri, telefon, Instagram ve harita bağlantısı gibi tüm bilgiler tek bir veri dosyasından gelir.
 
 ### Özellikler
 
