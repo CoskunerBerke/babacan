@@ -1,100 +1,137 @@
-# Babacan Çiğköfte Küçükpark — Web Sitesi
+# Babacan Çiğköfte Küçükpark — Restaurant Website
 
-Babacan Çiğköfte Küçükpark için açık temalı, premium editoryal görsel diline sahip, iştah açıcı ve mobilde kusursuz çalışan modern restoran web sitesi.
+**Light, editorial-style, mobile-first website for Babacan Çiğköfte's Küçükpark branch in Bornova, İzmir.**
 
----
+![Next.js](https://img.shields.io/badge/Next.js-14-000000?logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)
 
-## 🎨 Tasarım Karakteri ve Renk Paleti
+**Live:** [babacan-kucukpark.vercel.app](https://babacan-kucukpark.vercel.app)
 
-Tasarım tamamen açık temalı olarak kurgulanmış; editoryal restoran estetiği ile Küçükpark’ın canlı atmosferi harmanlanmıştır:
+Client project — designed and developed by Berke Coşkuner for Babacan Çiğköfte Küçükpark.
 
-- **Ana Arka Plan:** `#FBF8F2` (Sıcak kırık beyaz)
-- **Kart Yüzeyleri:** `#FFFFFF` (Temiz beyaz)
-- **Vurgulu Bölüm Zemini:** `#F1E9DD` (Açık bej)
-- **Ana Vurgu (CTA & Vurgular):** `#A92B25` (Koyu biber kırmızısı)
-- **Yardımcı Vurgu (Tazelik):** `#66734A` (Zeytin yeşili)
-- **Metin & Tipografi:** `#29231F` (Sıcak koyu kahve)
-- **Tipografi:** Başlıklarda Türkçe destekli karakterli serif (`Playfair Display`), gövdede okunaklı modern sans-serif (`Plus Jakarta Sans`).
+<p align="center">
+  <img src="public/images/babacan-akdeniz-kova.jpg" alt="Akdeniz Kova — hero image of the site" width="360">
+</p>
 
----
+## Overview
 
-## 📍 Doğrulanmış İşletme Bilgileri
+A one-page restaurant website that helps visitors see the menu, find the branch and order by phone with one tap. All content uses the branch's own product and in-store photos, and every business detail (menu, opening hours, phone, Instagram, map link) comes from one data file.
 
-Tüm bilgiler doğrulanmış kaynaklar ve şube içi fotoğraflardan derlenmiştir:
+## Features
 
-- **İşletme Adı:** Babacan Çiğköfte Küçükpark
-- **Konum:** Küçükpark, Bornova, İzmir
-- **Çalışma Saatleri:** 10:30 – 00:30
-- **Sipariş Telefonu:** 0553 918 85 57 (`tel:+905539188557`)
-- **Instagram:** [@babacancigkofte_kucukpark](https://www.instagram.com/babacancigkofte_kucukpark/)
-- **Harita Arama:** Google Maps üzerinden `"Babacan Çiğköfte Küçükpark Bornova İzmir"` sorgusu
-- **Slogan:** “Dünya'nın İlk Çiğköfte Restoranı”
+- **Hero** with "call to order" and "explore flavours" actions
+- **Info strip** — location, opening hours (10:30 – 00:30) and click-to-call phone number
+- **Flavours / menu** — product cards with category filter: buckets (kova), restaurant plates, portion & weight options
+- **About** section and **photo gallery** with a lightbox
+- **Contact** — Google Maps link, Instagram, phone
+- **Mobile bottom bar** — sticky call and directions buttons on phones
+- **SEO** — metadata, `Restaurant` Schema.org JSON-LD (address, cuisine, opening hours), `sitemap.xml`, `robots.txt`, web app manifest
+- Optimised images (AVIF / WebP) and self-hosted Google Fonts (Playfair Display, Plus Jakarta Sans)
 
----
+## Design
 
-## 📸 Kullanılan Gerçek Görseller Envanteri
+| Token | Colour |
+| --- | --- |
+| Background | `#FBF8F2` warm off-white |
+| Cards | `#FFFFFF` |
+| Highlight sections | `#F1E9DD` light beige |
+| Primary accent (CTA) | `#A92B25` pepper red |
+| Secondary accent | `#66734A` olive green |
+| Text | `#29231F` warm dark brown |
 
-Sitede üçüncü taraf veya yapay ürün görselleri kullanılmamış, sadece işletmeye ait gerçek fotoğraflar yer almıştır:
+Typography: *Playfair Display* for headings (with Turkish character support), *Plus Jakarta Sans* for body text.
 
-1. `babacan-kanka-menu.jpg` (1024x1024): Kanka Menü — İki çiğköfte dürüm, köpüklü ayran, nane ve turşulu gerçek ürün fotoğrafı.
-2. `babacan-citir-kova.jpg` (640x640): Babacan'ın Türkiye'de tek olan patentli Çıtır Kova kampanya görseli.
-3. `babacan-taze-tezgah.jpg`: Küçükpark şubesi taze malzeme tezgâhı ve cadde manzarası.
-4. `babacan-restoran-kasa-genel.jpg`: Küçükpark şubesi iç mekânı ve ışıklı kasa tezgâhı.
-5. `babacan-afis-king-roll.jpg`: Şube içindeki King Roll ve Kova sunum posterleri.
-6. `babacan-isikli-menu-panosu.jpg`: Şube içi ışıklı imza lezzetler panosu.
+## Tech stack
 
----
+| Area | Technology |
+| --- | --- |
+| Framework | Next.js 14 (App Router), React 18 |
+| Language | TypeScript |
+| Styling | Tailwind CSS 3, clsx, tailwind-merge |
+| Icons | lucide-react |
+| Hosting | Vercel |
 
-## 🛠️ Yerel Geliştirme ve Kurulum
+## Project structure
 
-### Gereksinimler
-- Node.js 18+ (Node 20 veya 24 önerilir)
-- npm
+```
+babacan/
+├── public/images/          # branch product and in-store photos
+├── src/
+│   ├── app/                # layout (metadata + JSON-LD), page, sitemap, robots, manifest, icon
+│   ├── components/         # Header, Hero, InfoStrip, FlavorsSection, AboutSection,
+│   │                       # GallerySection, Lightbox, ContactSection, Footer, MobileBottomBar
+│   └── data/restaurant.ts  # single source for all business info and the menu
+├── next.config.mjs
+└── tailwind.config.ts
+```
 
-### 1. Bağımlılıkları Yükleyin
+## Getting started
+
+Requirements: Node.js 18+ (20 or 24 recommended) and npm.
+
 ```bash
 npm install
-```
-
-### 2. Geliştirme Sunucusunu Başlatın
-```bash
-npm run dev
-```
-Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açın.
-
-### 3. Üretim Derlemesi ve Test
-```bash
+npm run dev      # http://localhost:3000
 npm run build
 npm run start
-```
-
-### 4. Kod Kontrolü (Lint)
-```bash
 npm run lint
 ```
 
+### Updating business information
+
+Edit **`src/data/restaurant.ts`**. Header, hero, menu, gallery, contact, footer, mobile bar and the JSON-LD schema all update automatically.
+
+### Environment variables
+
+| Name | Purpose |
+| --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Optional. Canonical URL for metadata and sitemap (falls back to the Vercel URL). |
+
+## Deployment
+
+The site needs no database and no server secrets. On Vercel: import the repository, keep the auto-detected **Next.js** preset (`next build`, output `.next`), optionally set `NEXT_PUBLIC_SITE_URL` for a custom domain, and deploy.
+
 ---
 
-## ⚙️ İşletme Bilgilerini Güncelleme
+## Türkçe
 
-Menü öğeleri, çalışma saatleri, telefon numarası veya sosyal medya bağlantılarını değiştirmek için tek bir merkezi dosya bulunmaktadır:
+**Babacan Çiğköfte Küçükpark** (Bornova, İzmir) şubesi için hazırlanmış açık temalı, editoryal tarzda ve mobil öncelikli restoran web sitesi.
 
-👉 `src/data/restaurant.ts`
+**Canlı:** [babacan-kucukpark.vercel.app](https://babacan-kucukpark.vercel.app)
 
-Bu dosyadaki değerleri güncellediğinizde; Header, Hero, Lezzetler, Galeri, İletişim, Footer, Mobil Alt Bar ve Schema JSON-LD otomatik olarak güncellenir.
+Müşteri projesi — Berke Coşkuner tarafından Babacan Çiğköfte Küçükpark için tasarlanıp geliştirilmiştir.
+
+### Genel bakış
+
+Ziyaretçilerin menüyü görmesini, şubeyi bulmasını ve tek dokunuşla telefonla sipariş vermesini sağlayan tek sayfalık restoran sitesi. Sitede şubeye ait ürün ve mekân fotoğrafları kullanılır; menü, çalışma saatleri, telefon, Instagram ve harita bağlantısı gibi tüm bilgiler tek bir veri dosyasından gelir.
+
+### Özellikler
+
+- **Hero** — "Sipariş İçin Ara" ve "Lezzetleri Keşfet" butonları
+- **Bilgi şeridi** — konum, çalışma saatleri (10:30 – 00:30), tıkla-ara telefon
+- **Lezzetler / menü** — kategori filtreli ürün kartları: kovalar, restoran sunumları, porsiyon & kilo
+- **Hakkımızda** ve lightbox'lı **fotoğraf galerisi**
+- **İletişim** — Google Maps, Instagram, telefon
+- **Mobil alt bar** — telefonda sabit "ara" ve "yol tarifi" butonları
+- **SEO** — metadata, `Restaurant` JSON-LD (adres, mutfak, çalışma saatleri), sitemap, robots, web app manifest
+
+### Kurulum
+
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build
+```
+
+İşletme bilgilerini güncellemek için yalnızca **`src/data/restaurant.ts`** dosyasını düzenleyin. İsteğe bağlı ortam değişkeni: `NEXT_PUBLIC_SITE_URL`.
+
+### Yayınlama
+
+Veritabanı veya sunucu sırrı gerekmez. Vercel'de depoyu içe aktarın, otomatik algılanan **Next.js** ayarlarıyla yayınlayın; özel alan adı için `NEXT_PUBLIC_SITE_URL` tanımlayın.
 
 ---
 
-## 🚀 Vercel Üzerinde Yayınlama
-
-Proje Vercel ile %100 uyumludur. Sıfır sunucu sırrı (secret) ve sıfır harici veritabanı gerektirir:
-
-1. [Vercel Dashboard](https://vercel.com/dashboard) adresine gidin.
-2. **Add New...** -> **Project** seçeneğine tıklayın.
-3. `CoskunerBerke/babacan` GitHub deposunu içe aktarın (Import).
-4. Framework Preset: **Next.js** (otomatik tanınır).
-5. Build Command: `next build` (varsayılan).
-6. Output Directory: `.next` (varsayılan).
-7. (İsteğe bağlı) Özel alan adınız varsa Environment Variables kısmına ekleyin:
-   - `NEXT_PUBLIC_SITE_URL`: `https://siteniz.com`
-8. **Deploy** butonuna tıklayın. Siteniz saniyeler içinde canlıya alınacaktır.
+Built by [Berke Coşkuner](https://github.com/CoskunerBerke)
